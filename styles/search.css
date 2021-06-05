@@ -267,6 +267,7 @@
 }
 
 .ticket-group {
+  width: 68%;
   display: flex;
 }
 
@@ -274,16 +275,15 @@
   padding: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .col1 {
-  width: 35%;
   display: flex;
   flex-direction: column;
 }
 
 .col2 {
-  width: 35%;
   display: flex;
   flex-direction: column;
 }
@@ -334,6 +334,7 @@
 }
 
 .price {
+  width: 30%;
   margin-top: 40px;
   display: flex;
 }
