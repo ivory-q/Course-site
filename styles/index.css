@@ -543,6 +543,20 @@
     margin-top: 0;
     font-size: 0.875em;
   }
+
+  .search-inp-group {
+    margin-right: 0;
+  }
+
+  .search-inp > input {
+    width: 90%;
+  }
+
+  .jumbo-search-form > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 750px) {
