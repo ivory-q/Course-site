@@ -531,6 +531,10 @@
     flex-direction: column;
   }
 
+  .jumbo-header {
+    margin-top: 100px;
+  }
+
   .jumbo-header h1 {
     font-size: 3em;
   }
