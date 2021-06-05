@@ -107,6 +107,10 @@
   border-radius: 5px;
 }
 
+.jumbo-search-form > form input[type="submit"]:hover {
+  background-color: hsl(19, 100%, 55%);
+}
+
 .jumbo-search-form > form span {
   font-weight: lighter;
   font-size: 0.85em;
@@ -441,6 +445,10 @@
   background-color: var(--cone, orangered);
   border-radius: 5px;
   color: white;
+}
+
+.mail-body > input[type="submit"]:hover {
+  background-color: hsl(19, 100%, 55%);
 }
 
 @media screen and (max-width: 1400px) {

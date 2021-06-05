@@ -103,6 +103,10 @@
   border-radius: 5px;
 }
 
+.jumbo-search-form > form input[type="submit"]:hover {
+  background-color: hsl(19, 100%, 55%);
+}
+
 .jumbo-search-form > form span {
   font-weight: lighter;
   font-size: 0.85em;
@@ -359,7 +363,7 @@
   align-items: center;
 }
 
-.price-group > input {
+.price-group input {
   cursor: pointer;
   padding: 16px 38px;
   border: none;
@@ -370,6 +374,10 @@
   font-family: Open Sans;
   font-weight: 300;
   font-size: 1em;
+}
+
+.price-group input:hover {
+  background-color: hsl(19, 100%, 55%);
 }
 
 .seats {
@@ -542,7 +550,7 @@
     justify-content: space-between;
   }
 
-  .price-group > input:first-of-type {
+  .price-group input:first-of-type  {
     display: none;
   }
 
@@ -575,7 +583,7 @@
     margin-right: 0;
   }
 
-  .search-inp > input {
+  .search-inp input {
     width: 90%;
   }
 
