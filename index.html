@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body>
+    <input type="checkbox" name="mobile-nav" id="mobile-nav" />
     <nav>
-      <input type="checkbox" name="mobile-nav" id="mobile-nav" />
       <label for="mobile-nav" class="mobile-label">
         <div><span></span></div>
       </label>
@@ -140,25 +140,29 @@
       </section>
       <section id="advantages">
         <div class="advantages-cont">
-          <div class="advantages-item">
-            <img src="./img/clock.svg" alt="" />
-            <h2>Покупка онлайн</h2>
-            <p>Билеты онлайн в любое время на сайте и в приложении</p>
+          <div class="advantages-group">
+            <div class="advantages-item">
+              <img src="./img/clock.svg" alt="" />
+              <h2>Покупка онлайн</h2>
+              <p>Билеты онлайн в любое время на сайте и в приложении</p>
+            </div>
+            <div class="advantages-item">
+              <img src="./img/road.svg" alt="" />
+              <h2>50 000 направлений</h2>
+              <p>Рейтинг рейсов перевозчиков по отзывам пассажиров</p>
+            </div>
           </div>
-          <div class="advantages-item">
-            <img src="./img/road.svg" alt="" />
-            <h2>50 000 направлений</h2>
-            <p>Рейтинг рейсов перевозчиков по отзывам пассажиров</p>
-          </div>
-          <div class="advantages-item">
-            <img src="./img/card.svg" alt="" />
-            <h2>Безопасная оплата</h2>
-            <p>Стандарты безопасности PCI DSS для защиты платежных данных</p>
-          </div>
-          <div class="advantages-item">
-            <img src="./img/return_ticket.svg" alt="" />
-            <h2>Возврат билетов</h2>
-            <p>Быстрое оформление возврата в личном кабинете</p>
+          <div class="advantages-group">
+            <div class="advantages-item">
+              <img src="./img/card.svg" alt="" />
+              <h2>Безопасная оплата</h2>
+              <p>Стандарты безопасности PCI DSS для защиты платежных данных</p>
+            </div>
+            <div class="advantages-item">
+              <img src="./img/return_ticket.svg" alt="" />
+              <h2>Возврат билетов</h2>
+              <p>Быстрое оформление возврата в личном кабинете</p>
+            </div>
           </div>
         </div>
       </section>
@@ -166,39 +170,45 @@
         <div class="guide-card">
           <h2 class="guide-header">Как купить билет на автобус на BusRiver</h2>
           <div class="guide-content">
-            <div class="guide-item">
-              <h3 class="guide-item-header">Найдите междугородние рейсы</h3>
-              <p class="guide-item-text">
-                Укажите направление и дату поездки в строке поиска и нажмите
-                «Найти» — вы увидите актуальное расписание и стоимость билетов.
-              </p>
+            <div class="guide-group">
+              <div class="guide-item">
+                <h3 class="guide-item-header">Найдите междугородние рейсы</h3>
+                <p class="guide-item-text">
+                  Укажите направление и дату поездки в строке поиска и нажмите
+                  «Найти» — вы увидите актуальное расписание и стоимость
+                  билетов.
+                </p>
+              </div>
+              <img src="./img/arrow.svg" alt="" />
+              <div class="guide-item">
+                <h3 class="guide-item-header">Выберите подходящий вариант</h3>
+                <p class="guide-item-text">
+                  Чтобы купить дешевые автобусные билеты онлайн, используйте
+                  фильтр по цене.
+                </p>
+              </div>
+              <img src="./img/arrow.svg" alt="" />
             </div>
-            <img src="./img/arrow.svg" alt="" />
-            <div class="guide-item">
-              <h3 class="guide-item-header">Выберите подходящий вариант</h3>
-              <p class="guide-item-text">
-                Чтобы купить дешевые автобусные билеты онлайн, используйте
-                фильтр по цене.
-              </p>
-            </div>
-            <img src="./img/arrow.svg" alt="" />
-            <div class="guide-item">
-              <h3 class="guide-item-header">Забронируйте билеты</h3>
-              <p class="guide-item-text">
-                Укажите паспортные данные: свои и других пассажиров, с которыми
-                вы путешествуете.
-              </p>
-            </div>
-            <img src="./img/arrow.svg" alt="" />
-            <div class="guide-item">
-              <h3 class="guide-item-header">
-                Оплатите заказ банковской картой
-              </h3>
-              <p class="guide-item-text">
-                После оплаты скачайте билет в личном кабинете на странице «Ваши
-                билеты». Распечатайте билет, чтобы предъявить его при посадке в
-                автобус.
-              </p>
+            <div class="guide-group">
+              <div class="guide-item">
+                <h3 class="guide-item-header">Забронируйте билеты</h3>
+                <p class="guide-item-text">
+                  Укажите паспортные данные: свои и других пассажиров, с
+                  которыми вы путешествуете.
+                </p>
+              </div>
+              <img src="./img/arrow.svg" alt="" />
+              <div class="guide-item">
+                <h3 class="guide-item-header">
+                  Оплатите заказ банковской картой
+                </h3>
+                <p class="guide-item-text">
+                  После оплаты скачайте билет в личном кабинете на странице
+                  «Ваши билеты». Распечатайте билет, чтобы предъявить его при
+                  посадке в автобус.
+                </p>
+              </div>
+              <div style="width: 30px"></div>
             </div>
           </div>
         </div>
@@ -206,6 +216,7 @@
       <section id="popular">
         <div class="popular-head">
           <h2 class="popular-header">Популярные направления из:</h2>
+          <div class="pop-inp-group">
           <div class="popular-inp">
             <span class="popular-inp-hint">Город отправления</span><br />
             <input
@@ -230,62 +241,70 @@
               <input placeholder="5 июня" type="text" name="" id="" />
               <img src="./img/calendar.svg" alt="" />
             </div>
-          </div>
+          </div></div>
         </div>
         <div class="popular-body">
-          <div class="popular-card-big">
-            <img src="./img/moscow.jpg" alt="" />
-            <p class="pop-item-dir">Краснодар -> Москва</p>
-            <p class="pop-item-price">Цена от <b>2000руб</b></p>
+          <div class="pop-group">
+            <div class="popular-card-big">
+              <img src="./img/moscow.jpg" alt="" />
+              <p class="pop-item-dir">Краснодар -> Москва</p>
+              <p class="pop-item-price">Цена от <b>2000руб</b></p>
+            </div>
+            <div class="popular-card-small">
+              <p class="pop-item-dir">
+                Краснодар <br />
+                Москва
+              </p>
+              <p class="pop-item-price">Цена от <br /><b>2000руб</b></p>
+            </div>
+            <div class="popular-card-small">
+              <p class="pop-item-dir">
+                Краснодар<br />
+                Москва
+              </p>
+              <p class="pop-item-price">Цена от <br /><b>2000руб</b></p>
+            </div>
           </div>
-          <div class="popular-card-big">
-            <img src="./img/moscow.jpg" alt="" />
-            <p class="pop-item-dir">Краснодар -> Москва</p>
-            <p class="pop-item-price">Цена от <b>2000руб</b></p>
+
+          <div class="pop-group">
+            <div class="popular-card-big">
+              <img src="./img/moscow.jpg" alt="" />
+              <p class="pop-item-dir">Краснодар -> Москва</p>
+              <p class="pop-item-price">Цена от <b>2000руб</b></p>
+            </div>
+            <div class="popular-card-small">
+              <p class="pop-item-dir">Краснодар <br />Москва</p>
+              <p class="pop-item-price">
+                Цена от<br />
+                <b>2000руб</b>
+              </p>
+            </div>
+            <div class="popular-card-small">
+              <p class="pop-item-dir">
+                Краснодар<br />
+                Москва
+              </p>
+              <p class="pop-item-price">Цена от <br /><b>2000руб</b></p>
+            </div>
           </div>
-          <div class="popular-card-big">
-            <img src="./img/moscow.jpg" alt="" />
-            <p class="pop-item-dir">Краснодар -> Москва</p>
-            <p class="pop-item-price">Цена от <b>2000руб</b></p>
-          </div>
-          <div class="popular-card-small">
-            <p class="pop-item-dir">
-              Краснодар <br />
-              Москва
-            </p>
-            <p class="pop-item-price">Цена от <br /><b>2000руб</b></p>
-          </div>
-          <div class="popular-card-small">
-            <p class="pop-item-dir">
-              Краснодар<br />
-              Москва
-            </p>
-            <p class="pop-item-price">Цена от <br /><b>2000руб</b></p>
-          </div>
-          <div class="popular-card-small">
-            <p class="pop-item-dir">Краснодар <br />Москва</p>
-            <p class="pop-item-price">
-              Цена от<br />
-              <b>2000руб</b>
-            </p>
-          </div>
-          <div class="popular-card-small">
-            <p class="pop-item-dir">
-              Краснодар<br />
-              Москва
-            </p>
-            <p class="pop-item-price">Цена от <br /><b>2000руб</b></p>
-          </div>
-          <div class="popular-card-small">
-            <p class="pop-item-dir">Краснодар <br />Москва</p>
-            <p class="pop-item-price">Цена от <br /><b>2000руб</b></p>
-          </div>
-          <div class="popular-card-small">
-            <p class="pop-item-dir">
-              Краснодар<br />
-              Москва
-            </p>
-            <p class="pop-item-price">Цена от <br /><b>2000руб</b></p>
+          <div class="pop-group">
+            <div class="popular-card-big">
+              <img src="./img/moscow.jpg" alt="" />
+              <p class="pop-item-dir">Краснодар -> Москва</p>
+              <p class="pop-item-price">Цена от <b>2000руб</b></p>
+            </div>
+
+            <div class="popular-card-small">
+              <p class="pop-item-dir">Краснодар <br />Москва</p>
+              <p class="pop-item-price">Цена от <br /><b>2000руб</b></p>
+            </div>
+            <div class="popular-card-small">
+              <p class="pop-item-dir">
+                Краснодар<br />
+                Москва
+              </p>
+              <p class="pop-item-price">Цена от <br /><b>2000руб</b></p>
+            </div>
           </div>
         </div>
       </section>

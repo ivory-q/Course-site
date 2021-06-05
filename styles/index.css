@@ -4,6 +4,8 @@
   justify-content: flex-start;
   align-items: center;
   background: url("../img/Group\ 190.png");
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: contain;
   position: relative;
   width: 100%;
@@ -128,6 +130,10 @@
   display: flex;
 }
 
+.advantages-group {
+  display: flex;
+}
+
 .advantages-item {
   margin: 0 5px;
 }
@@ -161,6 +167,12 @@
   border-radius: 8px;
 }
 
+.guide-group {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+}
+
 .guide-header {
   margin-top: 0;
   margin-bottom: 10px;
@@ -174,15 +186,19 @@
   align-items: flex-start;
 }
 
-.guide-content > img {
+.guide-group > img {
   margin: 0 10px;
   margin-top: 20px;
+}
+
+.guide-item {
+  width: 50%;
 }
 
 .guide-item-header {
   margin: 10px 0;
   font-family: Open Sans;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
@@ -247,7 +263,7 @@
   outline: none;
 }
 
-.popular-head .popular-inp:last-child input {
+.popular-head .popular-inp input {
   width: 85%;
 }
 
@@ -257,10 +273,13 @@
   color: #9d9d9d;
 }
 
+.pop-inp-group {
+  display: flex;
+}
+
 .popular-body {
   width: calc(min(1250px, 90%));
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -276,8 +295,7 @@
 .popular-card-small {
   box-shadow: 0 2px 4px rgba(78, 78, 78, 0.25);
   border-radius: 8px;
-  margin: 5px 10px;
-  width: 30%;
+  margin: 10px 8px;
   padding-bottom: 6px;
   background-color: white;
 }
@@ -431,10 +449,6 @@
     width: 500px;
   }
 
-  .jumbo-header {
-    width: auto;
-  }
-
   .search-inp {
     width: 250px;
   }
@@ -482,5 +496,154 @@
 
   .jumbo-search-form > form .search-inp-sub:last-of-type .search-inp {
     border: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .advantages-group {
+    flex-direction: column;
+  }
+
+  .guide-content {
+    flex-direction: column;
+  }
+
+  .guide-group {
+    width: 95%;
+  }
+
+  .pop-group:last-child {
+    display: none;
+  }
+
+  #jumbo > img {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .popular-head {
+    flex-direction: column;
+  }
+
+  .mail-cont {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .jumbo-header h1 {
+    font-size: 3em;
+  }
+
+  .jumbo-header p {
+    margin-top: 0;
+    font-size: 0.875em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #jumbo {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .search-inp-group {
+    flex-direction: column;
+  }
+
+  .jumbo-search-form
+    > form
+    .search-inp-sub:first-child
+    .search-inp:first-child {
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .jumbo-search-form > form .search-inp-sub:first-child .search-inp:last-child {
+    border-radius: 0;
+  }
+
+  .jumbo-search-form > form .search-inp-sub:last-child .search-inp:first-child {
+    border-radius: 0;
+  }
+
+  .jumbo-search-form > form .search-inp-sub:last-child .search-inp:last-child {
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .jumbo-search-form > form .search-inp-sub .search-inp {
+    border-bottom: 1px solid #e4e4e4;
+  }
+
+  .jumbo-search-form > form .search-inp-sub:first-of-type .search-inp {
+    border-right: 0;
+  }
+
+  .jumbo-search-form > form .search-inp-sub:last-of-type .search-inp {
+    border-bottom: 1px solid #e4e4e4;
+  }
+
+  #jumbo > img {
+    left: -30%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .advantages-cont {
+    flex-direction: column;
+  }
+
+  .guide-group {
+    flex-direction: column;
+  }
+
+  .guide-group > img {
+    transform: rotate(90deg);
+  }
+
+  .guide-group > .guide-item {
+    width: 100%;
+  }
+
+  .pop-inp-group {
+    flex-direction: column;
+  }
+
+  .pop-inp-group > .popular-inp:last-of-type {
+    border-top: 0;
+  }
+
+  .popular-body .pop-group:nth-child(2) {
+    display: none;
+  }
+
+  .reviews-content {
+    flex-direction: column;
+  }
+
+  .mail-head {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mail-head > img {
+    width: 100px;
+  }
+
+  .mail-body {
+    flex-direction: column;
+  }
+
+  .mail-body > input[type="submit"] {
+    margin-top: 20px;
+    height: 60px;
+  }
+
+  #jumbo > img {
+    display: none;
   }
 }
