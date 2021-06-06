@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BusRiver - Пассажиры</title>
+    <link
+      rel="shortcut icon"
+      href="../img/logo_bright.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/passengers.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+  </head>
+  <body>
+    <input type="checkbox" name="mobile-nav" id="mobile-nav" />
+    <nav>
+      <label for="mobile-nav" class="mobile-label">
+        <div><span></span></div>
+      </label>
+      <a href="../index.html" class="nav-logo">
+        <svg
+          class="nav-logo-img"
+          width="42"
+          height="42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.431 0h35.535c1.484.184 2.763 1.347 2.798 2.898v5.769c-4.559-.083-9.12-.011-13.68-.038-1.335-.038-2.781.305-3.688 1.36-2.062 2.3-4.059 4.66-6.117 6.965-1.691.048-3.385-.04-5.077.045-1.158.03-2.26.59-3.016 1.463-2.39 2.726-4.76 5.47-7.147 8.195-.923 1.048-1.794 2.142-2.803 3.11V2.817c.129-.648.311-1.314.777-1.81C1.588.279 2.572.128 3.43 0z"
+            fill="#2E3D91"
+          />
+          <path
+            d="M26.856 14.124c.959-1.043 2.47-1.239 3.814-1.182 3.696.07 7.403-.109 11.094.094v3.912c-5.75-.047-11.5.015-17.25-.03.809-.906 1.531-1.887 2.342-2.794zM13.99 21.786c.816-.51 1.798-.68 2.75-.658 8.342.024 16.684-.022 25.024.021v4.052c-7.312-.072-14.624 0-21.937-.037-1.45-.032-3.022.36-4.004 1.498a466.67 466.67 0 01-2.888 3.217c9.608.04 19.22-.021 28.83.021v9.497c-.229 1.295-1.23 2.43-2.57 2.603H2.535C1.168 41.698.231 40.417.236 39.032v-1.959c3.678-4.195 7.356-8.393 11.03-12.593.852-.946 1.629-2.007 2.723-2.694z"
+            fill="#2E3D91"
+          />
+        </svg>
+        <span class="nav-logo-text">BusRiver</span>
+      </a>
+      <div class="nav-menu">
+        <div href="" class="menu-logo">
+          <svg
+            class="nav-logo-img"
+            width="42"
+            height="42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.431 0h35.535c1.484.184 2.763 1.347 2.798 2.898v5.769c-4.559-.083-9.12-.011-13.68-.038-1.335-.038-2.781.305-3.688 1.36-2.062 2.3-4.059 4.66-6.117 6.965-1.691.048-3.385-.04-5.077.045-1.158.03-2.26.59-3.016 1.463-2.39 2.726-4.76 5.47-7.147 8.195-.923 1.048-1.794 2.142-2.803 3.11V2.817c.129-.648.311-1.314.777-1.81C1.588.279 2.572.128 3.43 0z"
+              fill="#2E3D91"
+            />
+            <path
+              d="M26.856 14.124c.959-1.043 2.47-1.239 3.814-1.182 3.696.07 7.403-.109 11.094.094v3.912c-5.75-.047-11.5.015-17.25-.03.809-.906 1.531-1.887 2.342-2.794zM13.99 21.786c.816-.51 1.798-.68 2.75-.658 8.342.024 16.684-.022 25.024.021v4.052c-7.312-.072-14.624 0-21.937-.037-1.45-.032-3.022.36-4.004 1.498a466.67 466.67 0 01-2.888 3.217c9.608.04 19.22-.021 28.83.021v9.497c-.229 1.295-1.23 2.43-2.57 2.603H2.535C1.168 41.698.231 40.417.236 39.032v-1.959c3.678-4.195 7.356-8.393 11.03-12.593.852-.946 1.629-2.007 2.723-2.694z"
+              fill="#2E3D91"
+            />
+          </svg>
+          <span class="nav-logo-text">BusRiver</span>
+        </div>
+        <a href="" class="nav-menu-item">Билеты</a>
+        <a href="" class="nav-menu-item">Направления</a>
+        <a href="" class="nav-menu-item">Расписание</a>
+        <a href="" class="nav-menu-item">О нас</a>
+        <label for="mobile-nav" class="mobile-label-close">
+          <div><span></span></div>
+        </label>
+      </div>
+    </nav>
+    <main>
+      <section id="passenger">
+        <div class="breadcrums">
+          <span>Выбор рейса</span>
+          <img src="../img/arr-bread.svg" alt="" />
+          <span>Выбор мест</span>
+          <img src="../img/arr-bread.svg" alt="" />
+          <span class="active-bread">Пассажиры</span>
+          <img src="../img/arr-bread.svg" alt="" />
+          <span>Оплата</span>
+        </div>
+        <form class="global-form" action="./purchase.html">
+          <div class="form-col1">
+            <div class="form-card">
+              <h2>Оформление билета</h2>
+              <p>
+                Указанные данные необходимы для совершения бронирования и будут
+                проверены при посадке в автобус
+              </p>
+              <div class="d-group">
+                <div class="inp-group">
+                  <label for="">Фамилия</label>
+                  <input placeholder="Иванов" type="text" name="" id="" />
+                </div>
+                <div class="inp-group">
+                  <label for="">Имя</label>
+                  <input placeholder="Иван" type="text" name="" id="" />
+                </div>
+              </div>
+              <div class="d-group">
+                <div class="inp-group">
+                  <label for="">Отчество</label>
+                  <input placeholder="Иванович" type="text" name="" id="" />
+                </div>
+                <div class="inp-group">
+                  <label for="">Дата рождения</label>
+                  <input placeholder="дд.мм.гггг" type="text" name="" id="" />
+                </div>
+              </div>
+              <div class="d-group">
+                <div class="inp-group">
+                  <label for="">Пол</label>
+                  <select name="" id="">
+                    <option value="m">Мужской</option>
+                    <option value="f">Женский</option>
+                  </select>
+                </div>
+                <div class="inp-group">
+                  <label for="">Гражданство</label>
+                  <select name="" id="">
+                    <option value="r">Российская Федерация</option>
+                    <option value="u">Украина</option>
+                    <option value="y">Узбекистан</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="d-group">
+                <div class="inp-group">
+                  <label for="">Документ</label>
+                  <select name="" id="">
+                    <option value="p">Паспорт</option>
+                    <option value="c">Студенческий билет</option>
+                    <option value="v">Водительское удостоверение</option>
+                  </select>
+                </div>
+                <div class="inp-group">
+                  <label for="">Номер документа</label>
+                  <input
+                    placeholder="серия и номер: 10 цифр"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </div>
+              </div>
+              <div class="d-group">
+                <div class="inp-group seat-group">
+                  <label for="">Место в автобусе</label>
+                  <div class="seat-place">
+                    <img src="../img/seat.svg" alt="" /><span>Место: 20</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-card">
+              <h2>Оформление билета</h2>
+              <p>
+                Указывайте корректные e-mail и номер телефона, т.к. они
+                необходимы для идентификации пользователя, получения билета,
+                возможности авторизации в ЛК и возможности вернуть билет.
+              </p>
+              <div class="d-group">
+                <div class="inp-group">
+                  <label for="">E-mail</label>
+                  <input
+                    placeholder="ivanovpetr@mail.ru"
+                    type="email"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="inp-group">
+                  <label for="">Телефон</label>
+                  <input
+                    type="tel"
+                    placeholder="+7 ___ ___-__-__"
+                    id="phone"
+                    name="phone"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-card">
+              <div class="header">
+                <h2>К оплате</h2>
+                <h2>1200 руб</h2>
+              </div>
+              <div class="divider"></div>
+              <div class="security">
+                <p class="sec-text">
+                  Ваши платежные и личные данные надежно защищены в соответствии
+                  с международными стандартами безопасности.
+                </p>
+                <div class="payment-icons">
+                  <img src="../img/logos_visa.svg" alt="" />
+                  <img src="../img/logo_mastercard.svg" alt="" />
+                  <img src="../img/logos_paypal.svg" alt="" />
+                </div>
+              </div>
+              <div class="d-group col">
+                <div class="inp-group">
+                  <label class="container">
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label for=""
+                    >Я принимаю условия
+                    <b>Пользовательского соглашения</b> (публичной оферты) и
+                    <b>политики конфиденциальности</b>.</label
+                  >
+                </div>
+                <div class="inp-group">
+                  <label class="container">
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label for=""
+                    >Я даю
+                    <b>согласие на обработку персональных данных</b>.</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="btn-group">
+              <input type="submit" value="Перейти к оплате" />
+              <div class="sec-sub-info">
+                <img src="../img/shield-lock.svg" alt="" />
+                <p>Ваши платежные и личные данные надежно защищены</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-col2">
+            <div class="recepit">
+              <h2>О рейсе</h2>
+              <div class="divider"></div>
+              <div class="row1">
+                <div class="time">
+                  <span>22:00</span><br />
+                  <span>2 июня</span>
+                </div>
+                <div class="marker"><div></div></div>
+                <div class="place">
+                  <h4>Краснодар</h4>
+                  <p>
+                    Автостанция “Новоясеневская”, метро Новоясеневская,
+                    Новоясеневская тупик;
+                  </p>
+                </div>
+              </div>
+              <div class="row2">
+                <div class="time">
+                  <span>08:00</span><br />
+                  <span>3 июня</span>
+                </div>
+                <div class="marker"><div></div></div>
+                <div class="place">
+                  <h4>Москва</h4>
+                  <p>
+                    Автостанция “Новоясеневская”, метро Новоясеневская,
+                    Новоясеневская тупик;
+                  </p>
+                </div>
+              </div>
+              <div class="total1">
+                <div>Цена:</div>
+                <div>1200 руб</div>
+              </div>
+              <div class="total2">
+                <span
+                  ><b>К оплате</b><br />
+                  (1 взрослый)</span
+                >
+                <span>1200 руб</span>
+              </div>
+              <div class="divider"></div>
+              <div class="return-ticket"><a href="">Условия возврата</a></div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="foo-line"></div>
+      <div class="foo-cont">
+        <div class="foo-nav">
+          <div class="foo-nav-block">
+            <h3 class="blk-header">ИНФОРМАЦИЯ</h3>
+            <div class="blk-items-group">
+              <a href="" class="blk-item">О нас</a>
+              <a href="" class="blk-item">Вопросы и ответы</a>
+              <a href="" class="blk-item">Вернуть билет</a>
+              <a href="" class="blk-item">Контакты</a>
+            </div>
+          </div>
+          <div class="foo-nav-block">
+            <h3 class="blk-header">ПАРТНЕРАМ</h3>
+            <div class="blk-items-group">
+              <a href="" class="blk-item">Перевозчикам</a>
+              <a href="" class="blk-item">Агентам</a>
+              <a href="" class="blk-item"
+                >Автобусные <br />
+                перевозчики</a
+              >
+            </div>
+          </div>
+          <div class="foo-nav-block">
+            <h3 class="blk-header">ДОКУМЕНТЫ</h3>
+            <div class="blk-items-group">
+              <a href="" class="blk-item">Договор оферты</a>
+              <a href="" class="blk-item"
+                >Политика<br />
+                конфиденциальности</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="foo-us">
+          <h3 class="foo-us-header">МЫ В СОЦСЕТЯХ</h3>
+          <div class="foo-us-icon-group">
+            <img class="foo-us-icon" src="../img/social/facebook.svg" alt="" />
+            <img class="foo-us-icon" src="../img/social/vk.svg" alt="" />
+            <img class="foo-us-icon" src="../img/social/twitter.svg" alt="" />
+            <img class="foo-us-icon" src="../img/social/telegram.svg" alt="" />
+          </div>
+          <p class="foo-us-copyright">&copy;2009 - 2021 BusRiver</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

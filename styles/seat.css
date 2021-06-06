@@ -28,6 +28,10 @@ body {
   font-weight: 300;
 }
 
+.breadcrums span:hover {
+  color: #525252;
+}
+
 span.active-bread {
   color: black;
   font-weight: 400;
@@ -129,7 +133,7 @@ span.active-bread {
 }
 
 .seat {
-    cursor: pointer;
+  cursor: pointer;
   font-family: Lora;
   color: #7c7c7c;
   font-size: 1.2em;
@@ -144,8 +148,8 @@ span.active-bread {
 }
 
 .seat.ava:hover {
-    box-shadow: 0 0 6px var(--cone, orangered);
-    border: 2px solid var(--cone, orangered);
+  box-shadow: 0 0 6px var(--cone, orangered);
+  border: 2px solid var(--cone, orangered);
 }
 
 .reverse {
@@ -204,6 +208,6 @@ span.active-bread {
   }
 
   .inf-1 {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
