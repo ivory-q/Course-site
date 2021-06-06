@@ -487,4 +487,25 @@ p.sec-text {
   .form-card .header h2:last-child {
     text-align: right;
   }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .total2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .total2 span:first-child {
+    margin-bottom: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .form-card .header h2:last-child {
+    text-align: left;
+  }
 }
